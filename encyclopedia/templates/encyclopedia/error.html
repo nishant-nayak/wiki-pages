@@ -1,0 +1,9 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Page Already Exists
+{% endblock %}
+
+{% block body %}
+    Sorry, the page for <a href="{% url 'content' title=title %}">{{ title }}</a> already exists.
+{% endblock %}
